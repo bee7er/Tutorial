@@ -25,7 +25,10 @@ int main(int argc, const char * argv[]) {
         // Now size is set with the initWithSize function
         //[square setSize:3];
         
+        square.size = 16;
         int x = [square getArea];
+        
+        //int x = square.size;
         
         NSLog(@"The area value is %i", x);
         

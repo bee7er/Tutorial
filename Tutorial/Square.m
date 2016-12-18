@@ -10,6 +10,8 @@
 
 @implementation Square
 
+@synthesize size;
+
 -(id) initWithSize:(int)s
 {
     self = [super init];
@@ -19,11 +21,6 @@
     }
     
     return self;
-}
-
--(void) setSize:(int)s
-{
-    size = s;
 }
 
 -(int) getArea

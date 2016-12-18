@@ -11,12 +11,13 @@
 @interface Square : NSObject
 {
     // Member variables declared in the block
-    int size;
+    //int size;
 }
+// Properties outside the block - see synthesize in the .m file
+@property int size;
 
 // Member functions declared outside the block
 -(id) initWithSize: (int)s;
--(void) setSize: (int)s;
 -(int) getArea;
 
 @end
