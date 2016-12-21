@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C811263E1E01872D007AE90C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C811263D1E01872D007AE90C /* main.m */; };
 		C851D6291E040943008B0EDB /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = C851D6281E040943008B0EDB /* Square.m */; };
+		C851D6301E0AE6E2008B0EDB /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C851D62F1E0AE6E2008B0EDB /* Helper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		C811263D1E01872D007AE90C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C851D6271E040943008B0EDB /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
 		C851D6281E040943008B0EDB /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		C851D62E1E0AE644008B0EDB /* Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		C851D62F1E0AE6E2008B0EDB /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				C811263D1E01872D007AE90C /* main.m */,
 				C851D6271E040943008B0EDB /* Square.h */,
 				C851D6281E040943008B0EDB /* Square.m */,
+				C851D62E1E0AE644008B0EDB /* Helper.h */,
+				C851D62F1E0AE6E2008B0EDB /* Helper.m */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C851D6291E040943008B0EDB /* Square.m in Sources */,
+				C851D6301E0AE6E2008B0EDB /* Helper.m in Sources */,
 				C811263E1E01872D007AE90C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

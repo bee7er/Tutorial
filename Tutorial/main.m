@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Square.h"
+#import "Helper.h"
 
 // Defining a constants
 extern const int COUNT; // Would go into a header file
@@ -31,6 +32,9 @@ int main(int argc, const char * argv[]) {
         //int x = square.size;
         
         NSLog(@"The area value is %i", x);
+        
+        Helper *helper = [[Helper alloc] init];
+        [helper printInfo:67 with: 54 and: 'd' also: @"Yellow"];
         
         NSLog(@"Done");
     }
