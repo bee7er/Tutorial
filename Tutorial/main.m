@@ -35,21 +35,13 @@ int main(int argc, const char * argv[]) {
         
         // 2. Get a list of all files in PWD
         
-        NSArray* files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:currentpath error:NULL];
-        
-        long x;
-        x = sizeof files;
-        
-        NSLog(@"size of array : %lu ", x);
-        // 3. Iterate the list and print list using NSLog
-       
-        
-        for (int i = 0; i < x; i++)
+        NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:currentpath error:NULL];
+        NSEnumerator* myIterator = [files reverseObjectEnumerator];
+        id anObject;
+        while(anObject = [myIterator nextObject])
         {
-            // NSLog(@"> %@",files[i]);
-            NSLog(@"%@", files[i]);
+            NSLog(@"File: %@", anObject);
         }
-        
         
         NSLog(@"Done");
         
