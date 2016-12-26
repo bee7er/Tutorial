@@ -35,12 +35,18 @@ int main(int argc, const char * argv[]) {
         
         // 2. Get a list of all files in PWD
         
+        // Convert from array to enumerator
         NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:currentpath error:NULL];
-        NSEnumerator* myIterator = [files reverseObjectEnumerator];
+        NSEnumerator *myIterator = [files objectEnumerator];
         id anObject;
-        while(anObject = [myIterator nextObject])
+        while (anObject = [myIterator nextObject])
         {
             NSLog(@"File: %@", anObject);
+        }
+        
+        // Or just use the array directly
+        for (id object in files) {
+            NSLog(@"File2: %@", object);
         }
         
         NSLog(@"Done");
