@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Square.h"
+#import "Circle.h"
 #import "Helper.h"
 
 // Defining a constants
@@ -35,6 +36,50 @@ int main(int argc, const char * argv[]) {
         
         Helper *helper = [[Helper alloc] init];
         [helper printInfo:67 with: 54 and: 'd' also: @"Yellow"];
+        
+        NSLog(@"\n\n**** for loop ****");
+        for (int i=1; i<=10; i++) {
+            Square *square = [[Square alloc] initWithSize:i];
+            NSLog(@"The area with size %i is %i", square.size, [square getArea]);
+        }
+        
+        NSLog(@"\n\n**** while loop ****");
+        int i=1;
+        while (i<=10) {
+            
+            // Skip entries which are evenly divisible by 3
+            if ((i % 3) == 0) {
+                i++;
+                continue;
+            }
+            // Exit when over 8
+            if (i > 8) {
+                break;
+            }
+            
+            Square *square = [[Square alloc] initWithSize:i];
+            NSLog(@"The area with size %i is %i", square.size, [square getArea]);
+            i++;
+        }
+        
+        NSLog(@"\n\n**** error handling ****");
+        @try {
+            Square *errorSquare = [[Square alloc] initWithSize:-1];
+            NSLog(@"The area with size %i is %i", errorSquare.size, [errorSquare getArea]);
+        }
+        @catch (NSException *exception) {
+            NSLog(@"Unexpected error: %@", [exception reason]);
+        }
+        @finally {
+            NSLog(@"In finally");
+        }
+        
+        NSLog(@"************** Objects");
+        Shape *obj = [[Circle alloc] initWithDefault:4];
+        obj.color = GREEN;
+        
+        NSLog(@"Color is %@", [obj printColor]);
+        NSLog(@"Area is %i", [obj getArea]);
         
         NSLog(@"Done");
     }

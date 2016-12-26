@@ -10,6 +10,8 @@
 		C811263E1E01872D007AE90C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C811263D1E01872D007AE90C /* main.m */; };
 		C851D6291E040943008B0EDB /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = C851D6281E040943008B0EDB /* Square.m */; };
 		C851D6301E0AE6E2008B0EDB /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C851D62F1E0AE6E2008B0EDB /* Helper.m */; };
+		C851D6331E115B8C008B0EDB /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = C851D6321E115B8C008B0EDB /* Shape.m */; };
+		C851D6351E115CE9008B0EDB /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = C851D6341E115CE9008B0EDB /* Circle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		C851D6281E040943008B0EDB /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
 		C851D62E1E0AE644008B0EDB /* Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
 		C851D62F1E0AE6E2008B0EDB /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		C851D6311E115B71008B0EDB /* Shape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		C851D6321E115B8C008B0EDB /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
+		C851D6341E115CE9008B0EDB /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		C851D6361E115D07008B0EDB /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				C811263D1E01872D007AE90C /* main.m */,
+				C851D6361E115D07008B0EDB /* Circle.h */,
 				C851D6271E040943008B0EDB /* Square.h */,
 				C851D6281E040943008B0EDB /* Square.m */,
 				C851D62E1E0AE644008B0EDB /* Helper.h */,
 				C851D62F1E0AE6E2008B0EDB /* Helper.m */,
+				C851D6311E115B71008B0EDB /* Shape.h */,
+				C851D6321E115B8C008B0EDB /* Shape.m */,
+				C851D6341E115CE9008B0EDB /* Circle.m */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -130,7 +140,9 @@
 			files = (
 				C851D6291E040943008B0EDB /* Square.m in Sources */,
 				C851D6301E0AE6E2008B0EDB /* Helper.m in Sources */,
+				C851D6351E115CE9008B0EDB /* Circle.m in Sources */,
 				C811263E1E01872D007AE90C /* main.m in Sources */,
+				C851D6331E115B8C008B0EDB /* Shape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

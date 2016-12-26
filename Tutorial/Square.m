@@ -12,8 +12,12 @@
 
 @synthesize size;
 
--(id) initWithSize:(int)s
+-(id) initWithSize: (int) s
 {
+    // Validate the size we have been given
+    if (s <= 0) {
+        @throw [NSException exceptionWithName: @"InvalidSizeException" reason: @"Size was not a positive number" userInfo: nil];
+    }
     self = [super init];
     
     if (self) {
@@ -21,6 +25,11 @@
     }
     
     return self;
+}
+
+-(id) initWithDefault: (int) d
+{
+    return [self initWithSize:d];
 }
 
 -(int) getArea

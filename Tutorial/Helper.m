@@ -10,7 +10,7 @@
 
 @implementation Helper
 
--(id) printInfo:(int)value with: (int)value2 and: (char) value3 also: (NSString *) str
+-(id) printInfo: (int) value with: (int) value2 and: (char) value3 also: (NSString *) str
 {
     printf("\nValue=%i\n\n", value);
     printf("\nValue2=%i\n\n", value2);

@@ -14,6 +14,6 @@
 }
 
 // Member functions declared outside the block
--(id) printInfo: (int)val with: (int)val2 and: (char) value3 also: (NSString *) str;
+-(id) printInfo: (int) val with: (int) val2 and: (char) value3 also: (NSString *) str;
 
 @end

@@ -6,9 +6,9 @@
 //  Copyright © 2016 Brian Etheridge. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Shape.h"
 
-@interface Square : NSObject
+@interface Square : Shape
 {
     // Member variables declared in the block
     //int size;
@@ -18,6 +18,5 @@
 
 // Member functions declared outside the block
 -(id) initWithSize: (int)s;
--(int) getArea;
 
 @end
