@@ -21,7 +21,37 @@ const int COUNT = 2;
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSLog(@"The area value is ");
+        NSLog(@"Start ");
+        
+        // 1. Find the present working directory
+        NSFileManager *filemgr;
+        NSString *currentpath;
+        
+        filemgr = [[NSFileManager alloc] init];
+        
+        currentpath = [filemgr currentDirectoryPath];
+        
+        NSLog(@"Current path is %@", currentpath);
+        
+        // 2. Get a list of all files in PWD
+        
+        NSArray* files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:currentpath error:NULL];
+        
+        long x;
+        x = sizeof files;
+        
+        NSLog(@"size of array : %lu ", x);
+        // 3. Iterate the list and print list using NSLog
+       
+        
+        for (int i = 0; i < x; i++)
+        {
+            // NSLog(@"> %@",files[i]);
+            NSLog(@"%@", files[i]);
+        }
+        
+        
+        NSLog(@"Done");
         
         
     }

@@ -26,6 +26,7 @@
     }
 }
 
+
 -(id) initWithDefault: (int) d
 {
     return self;
